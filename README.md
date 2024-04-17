@@ -39,9 +39,34 @@ In this Arduino  Relay Control Circuit we have used Arduino to control the relay
 
 ## PROGRAM:
 
+```
+// Define the pin connected to the relay
+const int relayPin = A0;
+
+void setup() {
+  // Initialize the relay pin as an output
+  pinMode(relayPin, OUTPUT);
+}
+
+void loop() {
+  // Turn on the relay
+  digitalWrite(relayPin, HIGH);
+  delay(1000); // Wait for 1 second
+  
+  // Turn off the relay
+  digitalWrite(relayPin, LOW);
+  delay(1000); // Wait for 1 second
+}
+
+```
+
 ## CIRCUIT DIAGRAM:
 
+![alt text](image.png)
+
 ## OUTPUT:
+
+![alt text](image-1.png)
 
 ## RESULT:
 
